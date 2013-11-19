@@ -1,0 +1,80 @@
+Klasse Eter
+
+package voedsel;
+public class Eter {
+	private String naam;
+	private int leeftijd;
+
+	public Eter() {
+	}
+
+	public Eter(String naam, int leeftijd) {
+
+		this.naam = naam;
+		this.leeftijd = leeftijd;
+	}
+
+	public int getLeeftijd() {
+		return leeftijd;
+	}
+
+	public int verhoogLeeftijd() {
+		return 1;
+	}
+}
+
+
+Klasse Brood
+
+package voedsel;
+
+public class Brood {
+
+	private String naam;
+	private int aantalCalorie;
+	private String witBrood;
+
+	public Brood(String naam, int aantalCalorie, String witBrood) {
+		super();
+		this.naam = naam;
+		this.aantalCalorie = aantalCalorie;
+		this.witBrood = witBrood;
+	}
+
+	public Brood(String naam, int aantalCalorie) {
+
+	}
+
+	public String getNaam() {
+		return naam;
+	}
+
+	public String getWitBrood() {
+		return witBrood;
+	}
+
+	public void setAantalCalorie(int aantalCalorie) {
+		this.aantalCalorie = aantalCalorie;
+	}
+
+}
+
+
+Main Class Voedsel
+
+package voedsel;
+
+class Voedsel {
+
+	public static void main(String[] args) {
+		Brood witbrood = new Brood("wit brood", 600);
+		Eter klaas = new Eter("Klaas", 18);
+		
+		klaas.verhoogLeeftijd();
+		
+		System.out.println("Naam is: " + klaas.getWitBrood());
+
+
+	}
+
+}
